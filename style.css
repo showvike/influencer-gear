@@ -15,11 +15,16 @@ body {
 .header {
   padding: 87px 120px 0;
   color: #3a3a3a;
+  margin-bottom: 100px;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
+}
+
+.nav-menu {
+  display: none;
 }
 
 .nav-title {
@@ -81,4 +86,89 @@ body {
 .heading-img {
   background-image: url("./images/circle-design.svg");
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heading-img img {
+  padding: 30px 33px 31px 2px;
+}
+
+.sponsors {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 69px;
+}
+
+/* mobile view */
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 35px 16px 0;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+
+  .nav-title {
+    font-size: 16px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .not-hidden {
+    display: block;
+    font-size: 10px;
+  }
+
+  .heading {
+    flex-direction: column-reverse;
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .heading-img {
+    background-size: 257px 257px;
+    background-repeat: no-repeat;
+  }
+
+  .heading-img img {
+    width: 202px;
+    height: 190px;
+    padding: 51px 33px 16px 22px;
+  }
+
+  .heading-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .heading-title {
+    font-size: 28px;
+  }
+
+  .heading-desc {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 10px 0 20px;
+    padding: 0 21px 0 18px;
+  }
+
+  .heading-button {
+    font-weight: 500;
+  }
+
+  .sponsors {
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .sponsor img {
+    width: 60%;
+  }
 }
